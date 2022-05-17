@@ -10,7 +10,8 @@ namespace EmployeeWageComputation
     {
         static void Main(string[] args)
         {
-            int IS_FULL_TIME = 1;
+            int IS_FULL_TIME = 2;
+            int IS_PART_TIME = 1;
             int EMP_RATE_PER_HOUR = 20;
             int empHrs = 0; 
             int empWage = 0;
@@ -20,6 +21,11 @@ namespace EmployeeWageComputation
             {
                 Console.WriteLine("Employee is Present");
                 empHrs = 8;
+            }
+            if(empCheck == IS_PART_TIME)
+            {
+                Console.WriteLine("Employee is doing Part Time");
+                empHrs =4 ;
             }
             else
             {
